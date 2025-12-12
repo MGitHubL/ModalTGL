@@ -1,8 +1,6 @@
 # ModalTGL
 
-Code and data of manuscript: Dictionary Multi-Modal Temporal Graph Learning.
-
-It is an early version, we will complete the data and code description after the paper is accepted.
+Code and data of the manuscript: Dictionary Multi-Modal Temporal Graph Learning.
 
 If you find any problems, feel free to contact us: ```mengliuedu@163.com```.
 
