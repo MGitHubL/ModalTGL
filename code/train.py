@@ -63,10 +63,7 @@ def train_val(args, train_val_data, model, mode, bs, epochs, criterion, optimize
       pos_prob, neg_prob, tunning_loss = model.contrast(src_l_cut, tgt_l_cut, bad_l_cut, ts_l_cut, e_l_cut)   # the core training code
       pos_label = torch.ones(size, dtype=torch.float, device=device, requires_grad=False)
       neg_label = torch.zeros(size, dtype=torch.float, device=device, requires_grad=False)
-      # loss = criterion(pos_prob, pos_label) + criterion(neg_prob, neg_label) + tunning_loss * args.tunning_weight
       loss = criterion(pos_prob, pos_label) + criterion(neg_prob, neg_label) + tunning_loss
-      # loss = criterion(pos_prob, pos_label) ** 2 + criterion(neg_prob, neg_label) ** 2 + tunning_loss
-      # loss = poly_loss(criterion, pos_prob, pos_label) + poly_loss(criterion, neg_prob, neg_label) + tunning_loss
       loss.backward()
       optimizer.step()
       # collect training results
