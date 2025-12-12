@@ -10,13 +10,19 @@ If you find any problems, feel free to contact us: ```mengliuedu@163.com```.
 
 In the paper, we bulit 4 new datasets and compare 4 public datasets.
 
-The new datasets can be downloaded from:
+The new datasets can be downloaded from the repository.
 
-(We are only providing a partial dataset and promise to complete it once the paper is accepted.)
+(We have only uploaded two datasets and promise to add two more after the paper is accepted.)
 
 The public datasets can be downloaded from:
 
-*DBLP*
+**DBLP**: It has been uploaded to this repository.
+
+**Yelp**:
+
+**Stack**:
+
+**TemFin**:
 
 ### Data Format
 
