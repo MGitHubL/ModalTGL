@@ -18,9 +18,7 @@ The public datasets can be downloaded from:
 
 **DBLP**: It has been uploaded to this repository.
 
-**Yelp**:
-
-**Stack**:
+**Yelp** and **Stack**: https://github.com/zjs123/DTGB
 
 **TemFin**:
 
