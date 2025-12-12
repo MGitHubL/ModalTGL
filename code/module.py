@@ -238,8 +238,7 @@ class ModalTGL(torch.nn.Module):
     e_raw = self_store[:,self.e_raw_idx].long()
     ts_raw = self_store[:,self.ts_raw_idx]
     e_feat = self.edge_raw_embed(e_raw)
-    # ts_feat = self.time_encoder(ts_raw)
-    ts_feat = self.time_encoder(ts_raw) * 0
+    ts_feat = self.time_encoder(ts_raw)
     prev_self_rep = self.self_rep[node_id]
     prev_oppo_rep = self.self_rep[oppo_id]
     updated_self_rep = self.self_aggregator(self.self_rep_linear(torch.cat((prev_oppo_rep, e_feat, ts_feat), -1)), prev_self_rep)
@@ -355,11 +354,7 @@ class ModalTGL(torch.nn.Module):
         
     new_p_embed, p_loss = self.film(p_embed)
     new_n_embed, n_loss = self.film(n_embed)
-    # tunning_loss = (p_loss + n_loss) * self.tunning_weight
-    tunning_loss = 0
-    
-    # p_embed = (new_p_embed * self.tunning_weight + p_embed)
-    # n_embed = (new_n_embed * self.tunning_weight + n_embed)
+    tunning_loss = (p_loss + n_loss) * self.tunning_weight
     
     p_score = self.out_layer(p_embed).squeeze_(dim=-1)
     n_score = self.out_layer(n_embed).squeeze_(dim=-1)
