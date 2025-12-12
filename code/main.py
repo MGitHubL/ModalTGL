@@ -27,7 +27,6 @@ TIME_DIM = args.time_dim
 REPLACE_PROB = args.replace_prob
 SELF_DIM = args.self_dim
 NGH_DIM = args.ngh_dim
-assert(NUM_HOP < 3) # only up to second hop is supported
 logger, get_checkpoint_path, get_ngh_store_path, get_self_rep_path, get_prev_raw_path, best_model_path, best_model_ngh_store_path = set_up_logger(args, sys_argv)
 set_random_seed(SEED)
 
@@ -118,8 +117,7 @@ for run in range(args.run):
   memory_dim = NGH_DIM + num_raw
   num_neighbors = [1]
   for i in range(NUM_HOP):
-    num_neighbors.extend([int(NUM_NEIGHBORS[i])])
-  # num_neighbors.extend([int(n) for n in NUM_NEIGHBORS]) # the 0-hop neighborhood has only 1 node
+    num_neighbors.extend([int(n) for n in NUM_NEIGHBORS]) # the 0-hop neighborhood has only 1 node
 
   total_start = time.time()
   modalTGL = ModalTGL(args, n_feat, e_feat, memory_dim, max_idx + 1, time_dim=TIME_DIM, pos_dim=POS_DIM, n_head=ATTN_NUM_HEADS, num_neighbors=num_neighbors, dropout=DROP_OUT,
