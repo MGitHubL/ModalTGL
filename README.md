@@ -12,7 +12,7 @@ In the paper, we bulit 4 new datasets and compare 4 public datasets.
 
 The new datasets can be downloaded from the repository.
 
-**DBLP**: It has been uploaded to this repository.
+**Amazon**: It has been uploaded to this repository.
 
 **DBLP**: It has been uploaded to this repository.
 
