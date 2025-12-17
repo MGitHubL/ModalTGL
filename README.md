@@ -24,9 +24,8 @@ The public datasets can be downloaded from:
 
 **TemFin**: https://github.com/FDUDSDE/SEAN
 
-### Data Format
 
-#### Use your own data
+### Use your own data
 Put your data under `processed` folder. The required input data includes `ml_${DATA_NAME}.csv`, `ml_${DATA_NAME}.npy` and `ml_${DATA_NAME}_node.npy`. They store the edge linkages, edge features and node features respectively.
 
 The `.csv` file has following columns
@@ -42,6 +41,16 @@ All node index starts from `1`. The zero index is reserved for `null` during pad
 
 
 ## Code
+
+### Requirements
+* `python >= 3.7`, `PyTorch >= 1.4`, please refer to their official websites for installation details.
+* Other dependencies:
+```{bash}
+pandas==1.4.3
+tqdm==4.41.1
+numpy==1.23.1
+scikit_learn==1.1.2
+```
 
 ### Training Commands
 
