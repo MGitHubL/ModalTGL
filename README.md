@@ -47,13 +47,9 @@ All node index starts from `1`. The zero index is reserved for `null` during pad
 
 #### Examples:
 
-* To train **NAT** with Wikipedia dataset in transductive training, using 32 1-hop N-cache, 16 2-hop N-cache, neighborhood representation of 4 dimensions , and with overriding probability alpha = 0.7:
+* To train **ModalTGL** with Amazon dataset in inductive training:
 ```bash
-python main.py -d wikipedia --pos_dim 16 --bs 100 --n_degree 32 16 --n_hop 2 --mode t --bias 1e-5 --seed 2 --verbosity 1 --drop_out 0.1 --attn_n_head 2 --ngh_dim 4 --self_dim 72 --replace_prob 0.7 --run 5
-```
-To train in inductive training, change `mode` from `t` to `i`. Here is an example of inductive training on Wiki-talk, using 16 1-hop neighbors with neighborhood representation size 4 and 72 dimensions of self representations.
-```bash
-python main.py -d wiki-talk-temporal --pos_dim 16 --bs 100 --n_degree 16 --n_hop 1 --mode i --bias 1e-5 --seed 2 --verbosity 1 --drop_out 0.1 --attn_n_head 1 --ngh_dim 4 --self_dim 72 --run 5
+python main.py -d amazon --mode t
 ```
 
 ## Usage Summary
