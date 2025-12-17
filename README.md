@@ -12,15 +12,17 @@ In the paper, we bulit 4 new datasets and compare 4 public datasets.
 
 The new datasets can be downloaded from the repository.
 
+**DBLP**: It has been uploaded to this repository.
+
+**DBLP**: It has been uploaded to this repository.
+
 (We have only uploaded two datasets and promise to add two more after the paper is accepted.)
 
 The public datasets can be downloaded from:
 
-**DBLP**: It has been uploaded to this repository.
-
 **Yelp** and **Stack**: https://github.com/zjs123/DTGB
 
-**TemFin**:
+**TemFin**: https://github.com/FDUDSDE/SEAN
 
 ### Data Format
 
