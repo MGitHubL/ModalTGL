@@ -73,9 +73,7 @@ usage: Interface for Neighbourhood-aware Scalable Learning for Temporal Networks
 ### optional arguments:
 ```
   -h, --help            show this help message and exit
-  -d {amazon, google, ml1m, brain, dblp},
-  --data {amazon, google, ml1m, brain, dblp}
-                        data sources to use, try wikipedia or reddit
+  -d {amazon, google, ml1m, brain, dblp}
   -m {t,i}, --mode {t,i}
                         transductive (t) or inductive (i)
   --n_degree [N_DEGREE [N_DEGREE ...]]
