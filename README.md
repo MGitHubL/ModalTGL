@@ -43,7 +43,7 @@ All node index starts from `1`. The zero index is reserved for `null` during pad
 
 ## Code
 
-## Training Commands
+### Training Commands
 
 #### Examples:
 
@@ -52,7 +52,9 @@ All node index starts from `1`. The zero index is reserved for `null` during pad
 python main.py -d amazon --mode t
 ```
 
-## Usage Summary
+### Usage Summary
+
+* Most parameters have already been set to default values.
 ```
 usage: Interface for Neighbourhood-aware Scalable Learning for Temporal Networks
        [-h]
@@ -103,22 +105,6 @@ usage: Interface for Neighbourhood-aware Scalable Learning for Temporal Networks
                         verbosity of the program output
   --run RUN             number of model runs
 ```
-
-## Instructions on Acquiring Datasets
-Preprocessed datasets: Reddit, Wikipedia, SocialEvolve, Enron, and UCI can be downloaded from [here](https://drive.google.com/drive/folders/1umS1m1YbOM10QOyVbGwtXrsiK3uTD7xQ?usp=sharing) to `processed/`. Then run the following:
-```{bash}
-cd processed/
-unzip data.zip
-```
-You may check that each dataset corresponds to three files: one `.csv` containing timestamped links, and two ``.npy`` as node & link features. Note that some datasets do not have node & link features, in which case the `.npy` files will be all zeros.
-
-Raw data for Ubuntu can be downloaded using this [link](https://snap.stanford.edu/data/sx-askubuntu.txt.gz) and Wiki-talk using this [link](https://snap.stanford.edu/data/wiki-talk-temporal.txt.gz) to `processed`. Run the following to preprocess the data.
-```{bash}
-python process.py --dataset sx-askubuntu
-python process.py --dataset wiki-talk-temporal
-```
-
-
 
 ## Acknowledge
 Codes and model implementations are referred to several projects: [NAT](https://github.com/Graph-COM/Neighborhood-Aware-Temporal-Network), [DyGlib](https://github.com/yule-BUAA/DyGLib), [DTGB](https://github.com/zjs123/DTGB). Thanks for their great contributions!
