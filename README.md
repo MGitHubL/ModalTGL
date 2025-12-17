@@ -51,6 +51,8 @@ All node index starts from `1`. The zero index is reserved for `null` during pad
 ```bash
 python main.py -d amazon --mode t
 ```
+* The link prediction result will be displayed directly after training.
+
 
 ### Usage Summary
 
