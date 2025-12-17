@@ -60,7 +60,7 @@ python main.py -d amazon --mode t
 ```
 usage: Interface for Neighbourhood-aware Scalable Learning for Temporal Networks
        [-h]
-       [-d {wikipedia,reddit,socialevolve,uci,enron,socialevolve_1month,socialevolve_2weeks,sx-askubuntu,sx-superuser,wiki-talk-temporal,mooc}]
+       [-d {amazon, google, ml1m, brain, dblp}]
        [-m {t,i}] [--n_degree [N_DEGREE [N_DEGREE ...]]] [--n_hop N_HOP]
        [--bias BIAS] [--pos_dim POS_DIM] [--self_dim SELF_DIM]
        [--ngh_dim NGH_DIM] [--linear_out] [--attn_n_head ATTN_N_HEAD]
@@ -73,7 +73,8 @@ usage: Interface for Neighbourhood-aware Scalable Learning for Temporal Networks
 ### optional arguments:
 ```
   -h, --help            show this help message and exit
-  -d {wikipedia,reddit,socialevolve,uci,enron,socialevolve_1month,socialevolve_2weeks,sx-askubuntu,sx-superuser,wiki-talk-temporal,mooc}, --data {wikipedia,reddit,socialevolve,uci,enron,socialevolve_1month,socialevolve_2weeks,sx-askubuntu,sx-superuser,wiki-talk-temporal,mooc}
+  -d {amazon, google, ml1m, brain, dblp},
+  --data {amazon, google, ml1m, brain, dblp}
                         data sources to use, try wikipedia or reddit
   -m {t,i}, --mode {t,i}
                         transductive (t) or inductive (i)
