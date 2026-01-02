@@ -60,7 +60,6 @@ scikit_learn==1.1.2
 ```bash
 python main.py -d amazon --mode t
 ```
-* The link prediction and node clustering result will be displayed directly after training.
 
 
 ### Usage Summary
