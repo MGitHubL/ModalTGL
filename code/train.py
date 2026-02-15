@@ -32,7 +32,6 @@ def train_val(args, train_val_data, model, mode, bs, epochs, criterion, optimize
   train_time = []
   for epoch in range(epochs):
     train_start = time.time()
-    # seed = random.randint(0,100)
     model.set_seed(seed)
     set_random_seed(seed)
     seeds.append(seed)
