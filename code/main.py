@@ -22,13 +22,11 @@ LEARNING_RATE = args.lr
 POS_DIM = args.pos_dim
 TOLERANCE = args.tolerance
 VERBOSITY = args.verbosity
-SEED = args.seed
 TIME_DIM = args.time_dim
 REPLACE_PROB = args.replace_prob
 SELF_DIM = args.self_dim
 NGH_DIM = args.ngh_dim
 logger, get_checkpoint_path, get_ngh_store_path, get_self_rep_path, get_prev_raw_path, best_model_path, best_model_ngh_store_path = set_up_logger(args, sys_argv)
-set_random_seed(SEED)
 
 # Load data and sanity check
 g_df = pd.read_csv('../data/{}/ml_{}.csv'.format(DATA, DATA))
