@@ -37,8 +37,6 @@ def get_args():
             help='toleratd margainal improvement for early stopper')
 
   # parameters controlling computation settings but not affecting results in general
-  seed = {'amazon': 3407, 'ml1m': 3407, 'brain': 42, 'temfin': 0, 'wiki': 0, 'dblp':42, 'google':0}
-  parser.add_argument('--seed', type=int, default=seed[data], help='random seed for all randomized algorithms')
   # parser.add_argument('--gpu', type=int, default=0, help='which gpu to use')
   # parser.add_argument('--cpu_cores', type=int, default=1, help='number of cpu_cores used for position encoding')
   parser.add_argument('--verbosity', type=int, default=1, help='verbosity of the program output')
