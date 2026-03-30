@@ -117,3 +117,17 @@ usage: Interface for Neighbourhood-aware Scalable Learning for Temporal Networks
 
 ## Acknowledge
 Codes and model implementations are referred to several projects: [NAT](https://github.com/Graph-COM/Neighborhood-Aware-Temporal-Network), [DyGlib](https://github.com/yule-BUAA/DyGLib), [DTGB](https://github.com/zjs123/DTGB). Thanks for their great contributions!
+
+## Cite us
+
+If you feel our work has been helpful, thank you for the citation.
+
+```
+@ARTICLE{ModalTGL_ML_TPAMI,
+  author={Liu, Meng and Liang, Ke and Li, Miaomiao and Zhu, Xueling and Liu, Xinwang},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Dictionary Multi-Modal Temporal Graph Learning}, 
+  year={2026}
+}
+
+```
