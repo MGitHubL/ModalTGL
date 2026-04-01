@@ -1,6 +1,7 @@
 # ModalTGL
 
-Code and data of the manuscript: Dictionary Multi-Modal Temporal Graph Learning (IEEE T-PAMI 2026).
+Dictionary Multi-Modal Temporal Graph Learning.
+IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.
 
 If you find any problems, feel free to contact us: ```mengliuedu@163.com```.
 
