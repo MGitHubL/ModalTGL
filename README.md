@@ -13,11 +13,9 @@ In the paper, we bulit 5 new datasets and compare 3 public datasets.
 
 The new datasets can be downloaded from the repository.
 
-**Amazon**: It has been uploaded to this repository.
+**Amazon, DBLP, Brain**: They have been uploaded to this repository.
 
-**DBLP**: It has been uploaded to this repository.
-
-(We have only uploaded two datasets and promise to add two more after the paper is accepted.)
+**Google, ML1M**: They can be downloaded from: https://drive.google.com/drive/folders/1US51Zxb8xlMS9ysgsL-f1CXCR_8Wvea7?usp=drive_link
 
 The public datasets can be downloaded from:
 
